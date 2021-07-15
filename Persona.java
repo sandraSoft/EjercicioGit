@@ -6,10 +6,13 @@ public class Persona {
     private String nombre;
 
     public Persona(String nombre) {
-        this.nombre = nombre;
+        if (nombre != null) {
+			this.nombre = nombre;
+		}
+		
     }
 
     public String getNombre(){
-        return nombre;
+        return "El nombre es: " + nombre;
     }
 }
